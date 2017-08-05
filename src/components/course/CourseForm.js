@@ -9,12 +9,14 @@ const CourseForm = ({course, allAuthors, onSave, onChange, saving, errors}) => {
       <TextInput
         name="title"
         label="Title"
+        type="text"
         value={course.title}
         onChange={onChange}
         error={errors.title}/>
 
       <SelectInput
         name="authorId"
+        type="text"
         label="Author"
         value={course.authorId}
         defaultOption="Select Author"
@@ -23,6 +25,7 @@ const CourseForm = ({course, allAuthors, onSave, onChange, saving, errors}) => {
 
       <TextInput
         name="category"
+        type="text"
         label="Category"
         value={course.category}
         onChange={onChange}
@@ -31,6 +34,7 @@ const CourseForm = ({course, allAuthors, onSave, onChange, saving, errors}) => {
       <TextInput
         name="length"
         label="Length"
+        type="text"
         value={course.length}
         onChange={onChange}
         error={errors.length}/>

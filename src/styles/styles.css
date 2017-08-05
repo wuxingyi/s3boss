@@ -14,3 +14,7 @@ a.active {
 nav {
   padding-top: 20px;
 }
+
+input[type="email"], input[type="password"] {
+  width:30%
+}
