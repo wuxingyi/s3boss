@@ -1,7 +1,7 @@
 import React from 'react';
 import TextInput from '../common/TextInput';
 
-const LoginForm = ({onSave, onChange}) => {
+const LoginForm = ({onSubmit, onChange}) => {
   return (
     <form>
       <TextInput
@@ -25,13 +25,13 @@ const LoginForm = ({onSave, onChange}) => {
         type="submit"
         className="btn btn-primary"
         value="登录"
-        onClick={onSave}/>
+        onClick={onSubmit}/>
     </form>
   );
 };
 
 LoginForm.propTypes = {
-  onSave: React.PropTypes.func.isRequired,
+  onSubmit: React.PropTypes.func.isRequired,
   onChange: React.PropTypes.func.isRequired
 };
 
